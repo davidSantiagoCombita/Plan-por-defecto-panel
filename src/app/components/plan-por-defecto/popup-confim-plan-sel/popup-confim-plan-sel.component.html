@@ -1,0 +1,13 @@
+<h3>¿ESTÁ SEGURO DE CAMBIAR EL PLAN DE CONSULTA?</h3>
+<div class="borders">
+    <p> <span>
+        <fa-icon [icon]="warning"></fa-icon>
+    </span>
+    La frecuencia de consulta de todos tus procesos cambiará haciendo 
+    que las notificaciones de cambios lleguen en días diferentes a los 
+    q te están llegando actualmente. ¿Estás seguro de continuar con esta acción?</p>
+    <div class="pop-up">
+        <button class="cancel" (click)="onClosePressCancel()">Cancelar</button>
+        <button class="accept" (click)="onClosePressConfirm()">Cambiar el plan</button>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+.grafico{
+    width: 140px !important;
+    height: 200px !important;
+    padding: 0px !important;
+    margin-top: -30px !important;
+    margin-bottom: -10px !important;
+}
+
+.general-div{
+    background-color: #F5F5F5;
+    width: 372px;
+}
+
+fieldset{
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 13px;
+    display: flex;
+}
+
+legend{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 10px;
+    color: #333333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 19.4px;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-weight: bold;
+}
+
+.grafico-num-proces{
+    display: block;
+}
+
+.box{
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+}
+.element-description{
+    display: flex !important;
+    margin-bottom: 5px;
+}
+
+.element-description p{
+    font-size: 13.6px;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-weight: bold;
+}

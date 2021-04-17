@@ -1,0 +1,57 @@
+<div class="div-general-plan">
+    <div class="component-plan-por-defecto">
+        <div class="text-plan">
+            <h2>
+                <a>
+                    Plan por defecto
+                </a>
+            </h2>
+        </div>
+        <form action="" class="but-plan-select" ngbDropdown>
+            <div class="but-desplegar-planes" ngbDropdownToggle>
+                <a href="#">
+                    <span>
+                        {{valorPlan}} pesos/mes
+                    </span>
+                </a> 
+            </div>
+            <input type="hidden">
+            <div class="menu-plan">
+                <ul ngbDropdownMenu>
+                    <li class="titulo-items" ngbDropdownItem>
+                        <p>Frecuencia de consulta (* Precio consulta por día)</p>
+                    </li>
+                    <li class="item" (click)="openDialog(planesPorDefecto[0].nombre, planesPorDefecto[0].valor)" ngbDropdownItem>
+                        <p>{{planesPorDefecto[0].nombre}} <span>({{planesPorDefecto[0].valor}} pesos*)</span></p> 
+                    </li>
+                    <li class="item" ngbDropdownItem>
+                        <div class="item-plan-days">
+                            <p>2 días por semana</p>
+                            <a class="sub-item left" (click)="openDialog(planesPorDefecto[1].nombre, planesPorDefecto[1].valor)">
+                                <p >{{planesPorDefecto[1].nombre}}</p> 
+                                <p class="precio">{{planesPorDefecto[1].valor}} Pesos</p> 
+                            </a>
+                            <a class="sub-item" (click)="openDialog(planesPorDefecto[2].nombre, planesPorDefecto[2].valor)">
+                                <p>{{planesPorDefecto[2].nombre}}</p> 
+                                <p class="precio">{{planesPorDefecto[2].valor}} Pesos*</p> 
+                            </a>
+                            <a class="sub-item rigth" (click)="openDialog(planesPorDefecto[3].nombre, planesPorDefecto[3].valor)">
+                                <p>{{planesPorDefecto[3].nombre}}</p> 
+                                <p class="precio">{{planesPorDefecto[3].valor}} Pesos</p> 
+                            </a >
+                        </div>
+                    </li>
+                    <li class="item" (click)="openDialog(planesPorDefecto[4].nombre, planesPorDefecto[4].valor)" ngbDropdownItem>
+                        <p>{{planesPorDefecto[4].nombre}} <span>({{planesPorDefecto[4].valor}} pesos *)</span></p>  
+                    </li>
+                    <li class="item" (click)="openDialog(planesPorDefecto[5].nombre, planesPorDefecto[5].valor)" ngbDropdownItem>
+                        <p>{{planesPorDefecto[5].nombre}} <span>({{planesPorDefecto[5].valor}} pesos *)</span></p> 
+                    </li>
+                    <li class="item" (click)="openDialog(planesPorDefecto[6].nombre, planesPorDefecto[6].valor)" ngbDropdownItem>
+                        <p>{{planesPorDefecto[6].nombre}} <span>({{planesPorDefecto[6].valor}} pesos *)</span></p> 
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>

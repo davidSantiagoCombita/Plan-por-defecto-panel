@@ -1,0 +1,23 @@
+<div class="general-div">
+    <fieldset>
+        <legend>
+            Num de Procesos por Plan 
+        </legend>
+        <div class="grafico-num-proces">
+            <canvas class="grafico" baseChart
+                [data]="doughnutChartData"
+                [chartType]="doughnutChartType"
+                [colors]="doughnutChartColors"
+                [legend]="doughnutChartLegend"
+                [options]= "doughnutChartOptions">
+            </canvas>
+            <div *ngFor="let data of planesPorDefecto">
+                <div class="element-description">
+                    <div class="box" [style.backgroundColor]="data.colorPlan"></div>
+                    <p>{{data.nombre}} ({{data.cantidad}})</p>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>
+

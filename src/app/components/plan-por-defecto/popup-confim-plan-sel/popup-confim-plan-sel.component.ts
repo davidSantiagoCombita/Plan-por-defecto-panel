@@ -32,7 +32,6 @@ export class PopupConfimPlanSelComponent implements OnInit {
 
   // metodo cuando se da confirmar a cambiar el plan
   onClosePressConfirm(): void{
-    console.log(this.data);
     this.dialogRef.close();
     // se manda el valor de el plan escogido para poder hacer el calculo en la web api
     // luego de cambiarlo se actulaliza y se pide en plan por defecto

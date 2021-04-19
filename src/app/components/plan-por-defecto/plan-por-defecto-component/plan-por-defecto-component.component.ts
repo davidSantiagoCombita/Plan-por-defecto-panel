@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog} from '@angular/material/dialog';
 import { PopupConfimPlanSelComponent } from '../popup-confim-plan-sel/popup-confim-plan-sel.component';
 import { ServicesPlan } from '../../../services/services-plan';
+import { DialogData } from '../popup-confim-plan-sel/popup-confim-plan-sel.component';
 
 @Component({
   selector: 'app-plan-por-defecto-component',
@@ -33,7 +34,14 @@ export class PlanPorDefectoComponentComponent implements OnInit {
   openDialog(nombrePlan, valorSel): void {
     const dialogRef = this.dialog.open(PopupConfimPlanSelComponent, {
       width: '560px',
-      data: {nombre: nombrePlan, valor: valorSel}
+      data: {nombre: nombrePlan, valor: valorSel},
+      backdropClass: 'dialog-bg'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result !== undefined) {
+        this.valorPlan = result;
+      }
     });
   }
 

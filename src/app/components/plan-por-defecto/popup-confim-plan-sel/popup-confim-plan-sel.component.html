@@ -8,6 +8,6 @@
     q te están llegando actualmente. ¿Estás seguro de continuar con esta acción?</p>
     <div class="pop-up">
         <button class="cancel" (click)="onClosePressCancel()">Cancelar</button>
-        <button class="accept" (click)="onClosePressConfirm()">Cambiar el plan</button>
+        <button class="accept" [mat-dialog-close]="data.valor">Cambiar el plan</button>
     </div>
 </div>

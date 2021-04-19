@@ -10,6 +10,7 @@ import { PopupConfimPlanSelComponent } from './components/plan-por-defecto/popup
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NumProcesPlanComponent } from './components/Num-procesos-plan/num-proces-plan/num-proces-plan.component';
 import { ChartsModule } from 'ng2-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ChartsModule } from 'ng2-charts';
   imports: [
     BrowserModule,
     MatDialogModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
     ChartsModule,

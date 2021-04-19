@@ -7,7 +7,7 @@ import { ServicesPlan } from '../../../services/services-plan';
   selector: 'app-plan-por-defecto-component',
   templateUrl: './plan-por-defecto-component.component.html',
   styleUrls: ['./plan-por-defecto-component.component.css'],
-  providers: [ServicesPlan]
+  providers: [ ServicesPlan ]
 })
 export class PlanPorDefectoComponentComponent implements OnInit {
 

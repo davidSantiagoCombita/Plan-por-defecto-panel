@@ -82,7 +82,6 @@ ul{
     background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
     border-radius: 4px;
     cursor: pointer;
-    width: 138px;
     height: 40px;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     border: 1px solid #bbbbbb;
@@ -155,6 +154,7 @@ ul{
 
 .item span{
     color: #999999;
+    font-size: 12px;
 }
 
 .menu-plan{

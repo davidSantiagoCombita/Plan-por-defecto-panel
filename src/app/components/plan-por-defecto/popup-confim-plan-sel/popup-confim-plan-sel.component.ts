@@ -6,6 +6,7 @@ import { ServicesPlan } from '../../../services/services-plan';
 export interface DialogData {
   nombre: string;
   valor: string;
+  valorMes: number;
 }
 
 @Component({
